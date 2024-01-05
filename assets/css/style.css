@@ -1,0 +1,332 @@
+@font-face {
+  font-family: gillsansregular;
+  src: url("../fonts/gill-sans-regular.otf");
+}
+@font-face {
+  font-family: gillsansbold;
+  src: url("../fonts/gill-sans-bold.otf");
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  transition: all 0.4s ease-in;
+  font-family: gillsansregular;
+}
+
+body {
+  line-height: normal !important;
+  font-family: gillsansregular;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* // Constant Styles */
+ul {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Main Style */
+.card_img {
+  height: 100vh;
+  position: relative;
+}
+.card_img .img_parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card_img .img_parent img,
+.card_img .img_parent video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.pd-200 {
+  padding: 0 200px;
+}
+
+/* ================================================================ */
+.custom_navbar {
+  position: fixed;
+  top: 0;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 6;
+}
+
+.link_style {
+  font-size: 1.1rem;
+  font-family: gillsansbold;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  padding: 12px 25px 10px 25px;
+  display: inline-block;
+}
+.link_style a {
+  color: #fff;
+  display: block;
+  height: 100%;
+}
+.link_style .border {
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  width: 87px;
+  height: 1px;
+}
+.link_style .border_top {
+  top: 0;
+  left: 0;
+}
+.link_style .border_bottom {
+  bottom: 0;
+  right: 0;
+}
+.link_style .border_right {
+  width: 1px;
+  height: 0;
+  right: 0;
+  bottom: 0;
+}
+.link_style .border_left {
+  width: 1px;
+  height: 0;
+  left: 0;
+  top: 0;
+}
+.link_style:hover {
+  color: #fff;
+}
+.link_style:hover .border_top,
+.link_style:hover .border_bottom {
+  width: 100%;
+}
+.link_style:hover .border_right,
+.link_style:hover .border_left {
+  height: 100%;
+}
+/* ================================================================ */
+#home_sections {
+  position: relative;
+}
+#home_sections .scroll_down_element {
+  text-align: center;
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+#home_sections .scroll_down_element .scroll_down_box {
+  width: 23px;
+  height: 37px;
+  border: 1px solid #60A60C;
+  border-radius: 30px;
+  margin: auto;
+  position: relative;
+}
+#home_sections .scroll_down_element .scroll_down_box .point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #60A60C;
+  border-radius: 50%;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: scrollDwon 2s 0.3s infinite linear;
+}
+#home_sections .scroll_down_element .scroll_label {
+  margin-top: 14px;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.section {
+  overflow: hidden;
+}
+
+@keyframes scrollDwon {
+  0% {
+    top: 15%;
+    opacity: 0;
+  }
+  100% {
+    top: 80%;
+    opacity: 1;
+  }
+}
+#first_section {
+  overflow: visible;
+  position: relative;
+}
+
+.intro_section {
+  background-color: #171717;
+}
+.intro_section .first_part {
+  z-index: 2;
+}
+.intro_section .first_part {
+  min-height: 100vh;
+  background-color: #171717;
+}
+.intro_section .first_part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro_section .section_content h5 {
+  font-size: 6rem;
+  font-family: gillsansbold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.intro_section .section_content h5 span {
+  display: block;
+  font-family: gillsansregular;
+}
+.intro_section .section_content .text_wrap {
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+}
+.intro_section .section_content .content_before_line {
+  height: 210px;
+}
+.intro_section .section_content .content_after_line {
+  height: 370px;
+}
+.intro_section .section_content .line {
+  width: 100%;
+  height: 7px;
+  background-color: #fff;
+  position: relative;
+}
+.intro_section .section_content .second-line {
+  margin-top: 30px;
+}
+.intro_section .section_content .seprated_line {
+  margin-top: 54px;
+}
+.intro_section .section_content .seprated_line .line {
+  height: 100px;
+  width: 7px;
+  background-color: #fff;
+  margin: auto;
+}
+.intro_section .section_content .seprated_line .middle_title {
+  margin: 25px 0;
+}
+.intro_section .section_content .seprated_line .middle_title h5 {
+  font-size: 2.4rem;
+  font-family: gillsansregular;
+}
+
+.why_section {
+  background-color: #171717;
+  min-height: 100vh;
+}
+.why_section .second_part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.why_section .why_viola {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.why_section .why_viola .why_viola_img .card_img {
+  height: 556px;
+}
+.why_section .why_viola .why_viola_content .pargraph_link {
+  padding-left: 65px;
+  padding-right: 50px;
+}
+.why_section .why_viola .why_viola_content h5 {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.why_section .why_viola .why_viola_content h5 span {
+  font-family: gillsansbold;
+}
+.why_section .why_viola .why_viola_content p {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 40px;
+  margin-bottom: 80px;
+}
+.why_section .pannel_container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.why_section .pannel {
+  font-weight: 300;
+  width: 100vw;
+}
+.why_section #second_section_second_pannel {
+  background-color: #61A60E;
+  min-height: 100vh;
+}
+
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* Shared styles  *//*# sourceMappingURL=style.css.map */
